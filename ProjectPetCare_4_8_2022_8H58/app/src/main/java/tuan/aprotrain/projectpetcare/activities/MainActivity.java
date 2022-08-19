@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private int mCurrentFragment = FRAGMENT_HOME;
 
     String urlToken;
-    Query query;
+
 
     FirebaseDatabase database;
     FirebaseAuth mAuth;
@@ -142,6 +142,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mReference = FirebaseDatabase.getInstance().getReference();
 
         mAuth = FirebaseAuth.getInstance();
+        user = mAuth.getCurrentUser();
+
         launcher = registerForActivityResult(new ActivityResultContracts.GetContent(), new ActivityResultCallback<Uri>() {
             @Override
             public void onActivityResult(Uri uri) {
@@ -427,27 +429,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Button btnUpdate = dialog.findViewById(R.id.btn_update);
 
 
-//        imgUser.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
-////                startActivityForResult(gallery, PICK_IMAGE);
-//                Intent intent = new Intent();
-//                intent.setType("image/*");
-//                intent.setAction(Intent.ACTION_GET_CONTENT);
-//                mActivityResultLauncher.launch(Intent.createChooser(intent, "Select Picture"));
-//                imgUser.setImageBitmap(bitmap);
-//
-////                startActivityForResult(Intent.createChooser(intent, "Select Picture"), IMAGE_CODE);
-//
-////                File file = new File(Environment.getExternalStorageDirectory(), "Pictures/1481853170451.jpg");
-////                Toast.makeText(MainActivity.this, file.getPath(), Toast.LENGTH_LONG).show();
-////                Uri path = Uri.fromFile(file);
-//
-////                launcher.launch("image/*");
-//            }
-//        });
-
 
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -495,22 +476,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         TextView tvEmailProfileNavDrawer = headerView.findViewById(R.id.tv_email_profile_nav_drawer);
         TextView tvUserNameProfileNavDrawer = headerView.findViewById(R.id.tv_user_name_profile_nav_drawer);
 
-        user = FirebaseAuth.getInstance().getCurrentUser();
-        query = mReference.child("Users").orderByChild("userId").equalTo(user.getUid());
-        //show image
-        query.addChildEventListener(new ChildEventListener() {
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+
+
+        mReference.child("Users").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
-            }
-
-
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                query.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        if (snapshot.getValue(User.class).getUserId().equals(currentUser.getUid())){
                             if (snapshot.child("userUrl").getValue() == null || snapshot.child("userUrl").getValue().equals("")) {
                                 Glide.with(getApplicationContext()).load(R.mipmap.ic_launcher_round).apply(new RequestOptions()
                                         .override(170, 170)).into(imgProfile);
@@ -521,33 +494,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                             String email = snapshot.child("email").getValue().toString();
                             tvEmailProfileNavDrawer.setText(email);
-                            if (snapshot.child("userName").getValue().equals("")) {
+                            if (snapshot.child("userName").getValue() == null) {
                                 tvUserNameProfileNavDrawer.setText("Update your username");
-                            } else if (snapshot.child("userName").getValue() != null) {
+                            } else
                                 tvUserNameProfileNavDrawer.setText(snapshot.child("userName").getValue().toString());
-                            } else {
-                                tvUserNameProfileNavDrawer.setText("Update your username");
                             }
                         }
-                        adapter = new petListNavDerAdapter(pets, images, getApplicationContext());
-                        recyclerView.setAdapter(adapter);
-                        adapter.notifyDataSetChanged();
-                    }
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                    adapter = new petListNavDerAdapter(pets, images, getApplicationContext());
+                    recyclerView.setAdapter(adapter);
+                    adapter.notifyDataSetChanged();
 
             }
 
@@ -556,41 +512,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             }
         });
-        // show name
-        query.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    if (snapshot.child("userUrl").getValue() == null || snapshot.child("userUrl").getValue().equals("")) {
-                        Glide.with(getApplicationContext()).load(R.mipmap.ic_launcher_round).apply(new RequestOptions()
-                                .override(170, 170)).into(imgProfile);
-                    } else {
-                        Glide.with(getApplicationContext()).load(snapshot.child("userUrl").getValue()).apply(new RequestOptions()
-                                .override(170, 170)).into(imgProfile);
-                    }
+    }
 
-
-                    String email = snapshot.getValue(User.class).getEmail();
-                    tvEmailProfileNavDrawer.setText(email);
-
-                    if (snapshot.getValue(User.class).getUserName() == null) {
-                        tvUserNameProfileNavDrawer.setText("Update your username");
-                    } else {
-                        tvUserNameProfileNavDrawer.setText(snapshot.getValue(User.class).getUserName());
-                    }
-                }
-                adapter = new petListNavDerAdapter(pets, images, getApplicationContext());
-                recyclerView.setAdapter(adapter);
-                adapter.notifyDataSetChanged();
-//                GetMatchingDataPetNameAndImage();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
+    public void getCurrentUserData(){
 
     }
 
@@ -800,10 +724,4 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    private void replaceFragment(Fragment fragment) {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.content_frame, fragment);
-        fragmentTransaction.commit();
-    }
 }

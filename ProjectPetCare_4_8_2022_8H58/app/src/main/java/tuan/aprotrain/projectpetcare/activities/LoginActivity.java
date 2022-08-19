@@ -187,7 +187,7 @@ public class LoginActivity extends AppCompatActivity {
         forgot_pass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                OpenForgotPassword(Gravity.CENTER);
+                OpenForgotPassword(Gravity.CENTER,uEmail);
             }
         });
 
@@ -290,7 +290,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth auth;
 
 
-    private void OpenForgotPassword(int gravity) {
+    private void OpenForgotPassword(int gravity, TextInputEditText uEmail) {
         final Dialog dialog = new Dialog(LoginActivity.this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.layout_forgot_pass);
@@ -314,7 +314,7 @@ public class LoginActivity extends AppCompatActivity {
 
         TextInputLayout texInputLayoutEmailReset = dialog.findViewById(R.id.texInputLayoutEmailReset);
 
-
+        edtforgot.setText(uEmail.getText().toString().trim());
 
         btnCancle.setOnClickListener(new View.OnClickListener() {
             @Override

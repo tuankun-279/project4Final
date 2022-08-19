@@ -229,73 +229,64 @@ public class BreedingFragment extends Fragment implements AdapterView.OnItemSele
 
             }
         });
-        spinnerGender.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (!parent.getItemAtPosition(position).equals("Gender")) {
-                    search(parent.getItemAtPosition(position).toString());
-                }else {
-                    search("");
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-        spinnerKind.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (!parent.getItemAtPosition(position).equals("Kind")) {
-                    search(parent.getItemAtPosition(position).toString());
-                }else {
-                    search("");
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-        spinnerSpecies.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (!parent.getItemAtPosition(position).equals("Species")) {
-                    search(parent.getItemAtPosition(position).toString());
-                }else {
-                    search("");
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
+//        spinnerGender.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//
+//            @Override
+//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//                if (!parent.getItemAtPosition(position).equals("Gender")) {
+//                    search(parent.getItemAtPosition(position).toString());
+//                }else {
+//                    search("");
+//                }
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> parent) {
+//
+//            }
+//        });
+//        spinnerKind.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//
+//            @Override
+//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//                if (!parent.getItemAtPosition(position).equals("Kind")) {
+//                    search(parent.getItemAtPosition(position).toString());
+//                }else {
+//                    search("");
+//                }
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> parent) {
+//
+//            }
+//        });
+//        spinnerSpecies.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//
+//            @Override
+//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//                if (!parent.getItemAtPosition(position).equals("Species")) {
+//                    search(parent.getItemAtPosition(position).toString());
+//                }else {
+//                    search("");
+//                }
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> parent) {
+//
+//            }
+//        });
     }
 
     @androidx.annotation.RequiresApi(api = Build.VERSION_CODES.N)
     private void search(String query) {
-
-//        for (Pet pet : petList) {
-//            if (pet.getKind().toLowerCase().contains(query.toLowerCase()) || pet.getSpecies().toLowerCase().contains(query.toLowerCase())) {
-//
-//                filteredList.add(pet);
-//                petAdapter.setFilteredList(filteredList);
-//            }
-//        }
-//        petAdapter.notifyDataSetChanged();
         List<Pet> filteredList = petList.stream()
                 .filter(pet ->
-                                (pet.getSpecies().toLowerCase().contains(query))
-                                || (pet.getGender().toLowerCase().equals(query))
-                                || (pet.getKind().toLowerCase().contains(query))
-                                || (pet.getColor().toLowerCase().contains(query)))
+                                (pet.getSpecies().contains(query))
+                                || (pet.getGender().equals(query))
+                                || (pet.getKind().contains(query))
+                                || (pet.getColor().contains(query)))
                 .collect(toList());
         petAdapter.setFilteredList(filteredList);
         petAdapter.notifyDataSetChanged();
@@ -308,6 +299,7 @@ public class BreedingFragment extends Fragment implements AdapterView.OnItemSele
         ArrayList<String> addKind = new ArrayList<>();
         ArrayList<String> addSpecies = new ArrayList<>();
         ArrayList<Pet> addUserPet = new ArrayList<>();
+
         getPetColor.add(0, "Color");
         getGender.add(0,"Gender");
         getKind.add(0,"Kind");
@@ -397,7 +389,7 @@ public class BreedingFragment extends Fragment implements AdapterView.OnItemSele
     }
 
     private void openSmartFilterDialog(int gravity) {
-        final Dialog dialog = new Dialog(getContext());
+        final Dialog dialog = new Dialog(getActivity());
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.breeding_dialog_choose_pet);
         Window window = dialog.getWindow();
@@ -445,20 +437,14 @@ public class BreedingFragment extends Fragment implements AdapterView.OnItemSele
                 if (!spinnerUserPetName.getSelectedItem().toString().trim().equals("Choose your pet")) {
                     for (Pet pet : userPets) {
                         if (pet.getPetName().equals(spinnerUserPetName.getSelectedItem().toString().trim())) {
+                            search(pet.getSpecies());
+                            search(pet.getKind());
                             if (pet.getGender().equals("Male")) {
                                 search("Female");
                             } else {
                                 search("Male");
                             }
-                            search(pet.getSpecies());
-                            search(pet.getKind());
-
-                            ArrayAdapter myAdap = (ArrayAdapter) spinnerPetColor.getAdapter(); //cast to an ArrayAdapter
-
-                            int spinnerPosition = myAdap.getPosition(pet.getColor());
-
-//set the default according to value
-                            spinnerPetColor.setSelection(spinnerPosition);
+                            int i = 0;
                             dialog.dismiss();
                         }
                     }
