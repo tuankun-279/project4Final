@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".activities.Service.ServiceActivity">
 
+    <include android:id="@+id/toolbar_uploading_pet"
+        layout="@layout/toolbar_pet_uploading_image" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/texInputLayoutServiceName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"

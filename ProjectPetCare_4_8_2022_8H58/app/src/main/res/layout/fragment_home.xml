@@ -70,6 +70,7 @@
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="30dp"
                     app:cardCornerRadius="15dp"
+                    android:background="#00000000"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -81,7 +82,9 @@
                         android:id="@+id/petHotel_Btn"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/pet_hotel_img" />
+                        android:src="@drawable/pet_hotel_img"
+                        android:background="@drawable/bg_white_corner_16"
+                         />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView

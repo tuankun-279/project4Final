@@ -2,6 +2,7 @@ package tuan.aprotrain.projectpetcare.activities.Service;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -41,14 +42,22 @@ public class ServiceActivity extends AppCompatActivity  {
     private Boolean isUpdating = false;
     Service services;
 
+    // Define ActionBar object
+    Toolbar toolbar;
+
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         //reference = FirebaseDatabase.getInstance().getReference();
         refServices = FirebaseDatabase.getInstance().getReference().child("Services");
         refCategory = FirebaseDatabase.getInstance().getReference().child("Categories");
         setContentView(R.layout.activity_service);
+
+        toolbar = findViewById(R.id.toolbar_uploading_pet);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         spinnerCategoryName = findViewById(R.id.spnCategoryName);
         ArrayAdapter<String> categoryNameAdapter = new ArrayAdapter(ServiceActivity.this,
@@ -95,6 +104,13 @@ public class ServiceActivity extends AppCompatActivity  {
             }
         });
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+    }
+
     public void ServiceAdd(String CategoryName, String ServiceName, Float ServicePrice, Long ServiceTime){
         //reference.child("Services");
         services = new Service();

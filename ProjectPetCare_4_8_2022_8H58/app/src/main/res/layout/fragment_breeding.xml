@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="#753095ee">
+            android:background="#653095ee">
 
             <SearchView
                 android:id="@+id/petListSearchView"
@@ -29,7 +29,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:background="#753095ee"
+            android:background="#653095ee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:background="#753095ee"
+            android:background="#653095ee"
             android:orientation="horizontal">
 
             <Spinner
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:orientation="horizontal"
-            android:background="#753095ee">
+            android:background="#653095ee">
 
             <Spinner
                 android:id="@+id/sp_gender"

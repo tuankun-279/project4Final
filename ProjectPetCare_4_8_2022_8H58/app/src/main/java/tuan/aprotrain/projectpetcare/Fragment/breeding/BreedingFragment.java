@@ -229,54 +229,54 @@ public class BreedingFragment extends Fragment implements AdapterView.OnItemSele
 
             }
         });
-//        spinnerGender.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//
-//            @Override
-//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                if (!parent.getItemAtPosition(position).equals("Gender")) {
-//                    search(parent.getItemAtPosition(position).toString());
-//                }else {
-//                    search("");
-//                }
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> parent) {
-//
-//            }
-//        });
-//        spinnerKind.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//
-//            @Override
-//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                if (!parent.getItemAtPosition(position).equals("Kind")) {
-//                    search(parent.getItemAtPosition(position).toString());
-//                }else {
-//                    search("");
-//                }
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> parent) {
-//
-//            }
-//        });
-//        spinnerSpecies.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//
-//            @Override
-//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                if (!parent.getItemAtPosition(position).equals("Species")) {
-//                    search(parent.getItemAtPosition(position).toString());
-//                }else {
-//                    search("");
-//                }
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> parent) {
-//
-//            }
-//        });
+        spinnerGender.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (!parent.getItemAtPosition(position).equals("Gender")) {
+                    search(parent.getItemAtPosition(position).toString());
+                }else {
+                    search("");
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        spinnerKind.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (!parent.getItemAtPosition(position).equals("Kind")) {
+                    search(parent.getItemAtPosition(position).toString());
+                }else {
+                    search("");
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        spinnerSpecies.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (!parent.getItemAtPosition(position).equals("Species")) {
+                    search(parent.getItemAtPosition(position).toString());
+                }else {
+                    search("");
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 
     @androidx.annotation.RequiresApi(api = Build.VERSION_CODES.N)
@@ -444,7 +444,9 @@ public class BreedingFragment extends Fragment implements AdapterView.OnItemSele
                             } else {
                                 search("Male");
                             }
-                            int i = 0;
+                            search(pet.getSpecies());
+                            search(pet.getKind());
+
                             dialog.dismiss();
                         }
                     }
