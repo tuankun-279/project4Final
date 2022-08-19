@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/idDialog"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/selectedServiceName"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:textSize="15sp"
+        android:text="My service name"/>
+    <View
+        android:id="@+id/viewHorizontal"
+        android:layout_width="2dp"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:background="#757575"/>
+    <TextView
+        android:id="@+id/selectedServicePrice"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:gravity="left"
+        android:text="Price "/>
+    <View
+        android:id="@+id/viewHorizontal1"
+        android:layout_width="2dp"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:background="#757575"/>
+    <TextView
+        android:id="@+id/selectedServiceTime"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:gravity="left"
+        android:text="time"/>
+</LinearLayout>

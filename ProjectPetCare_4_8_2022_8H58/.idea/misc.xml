@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/GITHUB/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/custombutton.xml" value="0.1685" />
+        <entry key="..\:/GITHUB/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_reminder.xml" value="0.16576086956521738" />
+        <entry key="..\:/GITHUB/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/add_activity_medicine.xml" value="0.16576086956521738" />
+        <entry key="..\:/GITHUB/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/main_fragment_reminder.xml" value="0.16576086956521738" />
+        <entry key="..\:/Project4/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.258" />
+        <entry key="..\:/Project4/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_booking.xml" value="0.3625" />
+        <entry key="..\:/Project4/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_booking_detail.xml" value="0.18541666666666667" />
+        <entry key="..\:/Project4/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_hotel_booking.xml" value="0.2" />
+        <entry key="..\:/Project4/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Project4/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_pet.xml" value="0.3625" />
+        <entry key="..\:/Project4/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_service.xml" value="0.33" />
+        <entry key="..\:/Project4/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_verify_o_t_p.xml" value="0.25" />
+        <entry key="..\:/Project4/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/bottom_nav_menu.xml" value="0.2" />
+        <entry key="..\:/Project4/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_backup.xml" value="0.3625" />
+        <entry key="..\:/Project4/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_item.xml" value="0.3625" />
+        <entry key="..\:/Project4/Booking/ProjectPetCare_4_8_2022_8H58/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1935" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/bg_gray_corner_16.xml" value="0.2465" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/bg_white_corner.xml" value="0.2275" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/bg_white_corner_10_border_gray.xml" value="0.1445" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/bg_yellow_corner_10.xml" value="0.1945" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/bottom_background.xml" value="0.236" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/header_background.xml" value="0.236" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2275" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2275" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1935" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/log_reg_bg.xml" value="0.2465" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/log_reg_btn.xml" value="0.2465" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/round_background_breeding.xml" value="0.22" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/side_nav_bar.xml" value="0.1445" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/hello/drawable/ic_baseline_email_24.xml" value="0.2465" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/hello/drawable/ic_launcher_background.xml" value="0.1935" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/hello/mipmap-anydpi-v26/ic_launcher.xml" value="0.2275" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/hello/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2275" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_admin.xml" value="0.33" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_booking.xml" value="0.18541666666666667" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_booking_history.xml" value="0.22" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_booking_update.xml" value="0.19375" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_breeding.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_category.xml" value="0.3625" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_custom_list_view.xml" value="0.33" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_forgot_password.xml" value="0.18645833333333334" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_image_pet.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_pet.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_pet_delete.xml" value="0.1" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_pet_update.xml" value="0.1859375" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_read_qr_code.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_read_qrcode.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_register.xml" value="0.5" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_reminder.xml" value="0.1" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_service.xml" value="0.1" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_service_delete.xml" value="0.1" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_user_delete.xml" value="0.1" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_user_update.xml" value="0.33" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/app_bar_main.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/booking_histories_item.xml" value="0.45" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/booking_history_list_item.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/booking_list_item.xml" value="0.25" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/booking_services_item.xml" value="0.33" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/breeding_dialog_choose_pet.xml" value="0.33" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/content_main.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/fragment_add_edit.xml" value="0.20416666666666666" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/fragment_booking_history.xml" value="0.3625" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/fragment_breeding.xml" value="0.33" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/fragment_breeding2.xml" value="0.3625" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/fragment_gallery.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/fragment_home.xml" value="0.23222748815165878" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/fragment_setting.xml" value="0.18" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/fragment_share.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/fragment_slide_show.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/item_photos.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_about_us.xml" value="0.3625" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_dialog_booking.xml" value="0.19444444444444445" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_dialog_display_images.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_dialog_edit_username.xml" value="0.20416666666666666" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_dialog_on_time.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_dialog_request.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_drop_down.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_forgot_pass.xml" value="0.3484375" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_forgotpass.xml" value="1.0" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_item.xml" value="0.1" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_navigation.xml" value="0.28160919540229884" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_navigation_header.xml" value="0.22" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_receive_dialog.xml" value="0.3625" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_recive_dialog.xml" value="0.33" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_selected_dropdown.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/list_booking.xml" value="0.5" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/list_pet.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/list_user.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/main_fragment_reminder.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/nav_header_main.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/pet_information.xml" value="0.3625" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/pet_item_nav.xml" value="0.5" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/photos_display_item.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/toolbar_booking.xml" value="0.24947916666666667" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/toolbar_booking_top.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/toolbar_breeding.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/toolbar_pet_uploading_image.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/menu/admin_menu_option.xml" value="0.18541666666666667" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3625" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/menu/image_pet_menu.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/menu/main.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/menu/navigation_menu.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/menu/search_breeding_pet.xml" value="0.2" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2275" />
+        <entry key="..\:/ProjectPetCare_4_8_2022_8H58/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2465" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/background_button.xml" value="0.1395" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/bg_grey_corner_10.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/bg_white_corner.xml" value="0.1395" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/bg_white_corner_10_border_gray.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/bg_white_corner_16.xml" value="0.124" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/bg_yellow_corner_10.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/bg_yellow_corner_16_top_left_top_right.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/button_bg.xml" value="0.1395" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/circle.xml" value="0.1395" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/custombutton.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/edit.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/edit_text_bg.xml" value="0.1395" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/ic_add.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/ic_baseline_collections_24.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/ic_baseline_inbox_24.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/login_bg.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/drawable/view_bg.xml" value="0.1395" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_booking.xml" value="0.4" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_breeding.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_category.xml" value="0.2" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_register.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_reminder.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/activity_send_o_t_p.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/fragment_setting.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_dialog_booking.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_dialog_request.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_item_group.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_navigation_header.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/layout_selected_dropdown.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/login_tab_fragment.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/main_fragment_reminder.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/pet_information.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/register_tab_fragment.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/slider_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/layout/toolbar_breeding.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Le Quang Kien/Documents/Booking-main/ProjectPetCare_4_8_2022_8H58/app/src/main/res/menu/navigation_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menuProfile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/profile"/>
+
+    <item android:id="@+id/menuNotification"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="@string/notification"/>
+
+    <item android:id="@+id/menuCollection"
+        android:icon="@drawable/ic_baseline_collections_24"
+        android:title="@string/collection"/>
+
+    <item android:id="@+id/menuInbox"
+        android:icon="@drawable/ic_baseline_inbox_24"
+        android:title="@string/inbox"/>
+
+    <item android:id="@+id/menuOrders"
+        android:icon="@drawable/ic_baseline_featured_play_list_24"
+        android:title="@string/orders"/>
+
+    <item android:title="Others">
+    <menu>
+        <item
+            android:id="@+id/menuSettings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/setting"/>
+        <item
+            android:id="@+id/menuSupport"
+            android:icon="@drawable/ic_baseline_support_agent_24"
+            android:title="@string/support"/>
+        <item
+            android:id="@+id/menuAboutUs"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="@string/info"/>
+    </menu>
+    </item>
+    <item android:id="@+id/btnLogout"
+        android:icon="@drawable/ic_logout"
+        android:title="Log Out"/>
+</menu>

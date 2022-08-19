@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Giga Pet</string>
+    <!-- begin notification reminder -->
+    <string name="channel_name">Channel 1</string>
+    <string name="channel_description">This is Channel 1</string>
+    <!-- end notification reminder -->
+    <string name="profile">Profile</string>
+    <string name="notification">Notification</string>
+    <string name="info">About</string>
+    <string name="support">Support</string>
+    <string name="inbox">Inbox</string>
+    <string name="orders">Orders</string>
+    <string name="collection">Collection</string>
+    <string name="setting">Settings</string>
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>All</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="petName">
+        <item>Giga Doge</item>
+        <item>Lakavu Nguyen</item>
+        <item>Giga Cato</item>
+        <item>MilkShake</item>
+    </string-array>
+    <string-array name="payment">
+        <item>Banking</item>
+        <item>Cash</item>
+    </string-array>
+    <string-array name="adress">
+        <item>Tay Ho</item>
+        <item>Hoan Kiem</item>
+        <item>Hai Ba Trung</item>
+        <item>Ba Dinh</item>
+        <item>Thanh Xuan</item>
+        <item>Hoang Mai</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_booking_history">Booking History</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_add_pet">Add Pet</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Breeding</string>
+    <string name="menu_about_us">About Us</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_log_out">Log Out</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    <string name="menu_log_out">Log Out</string>-->
+</resources>

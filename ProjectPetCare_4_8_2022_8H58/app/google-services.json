@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "244147939489",
+    "firebase_url": "https://projectpetcare-b8ee0-default-rtdb.firebaseio.com",
+    "project_id": "projectpetcare-b8ee0",
+    "storage_bucket": "projectpetcare-b8ee0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244147939489:android:0ad948ddb29c4aebbbe8e0",
+        "android_client_info": {
+          "package_name": "com.c"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244147939489-0hik0fggb9lm5a0qsv40phg4vu8bjbe0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.c",
+            "certificate_hash": "7cae1e96583e4c21c18732d65a4cd325418e4a3b"
+          }
+        },
+        {
+          "client_id": "244147939489-dedonase1fpgnelhajq241k0r2dg9hmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqSwMu-TRuTU_1dTgsyK1I9ljxr13JPYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244147939489-dedonase1fpgnelhajq241k0r2dg9hmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244147939489:android:dfe703aac4a8bda2bbe8e0",
+        "android_client_info": {
+          "package_name": "com.example.testpj4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244147939489-dedonase1fpgnelhajq241k0r2dg9hmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqSwMu-TRuTU_1dTgsyK1I9ljxr13JPYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244147939489-dedonase1fpgnelhajq241k0r2dg9hmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244147939489:android:2e5e04d395cbffd7bbe8e0",
+        "android_client_info": {
+          "package_name": "tuan.aprotrain.projectpetcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244147939489-lgvtsmij0m63n1ajtsr2tl9frcarsei1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tuan.aprotrain.projectpetcare",
+            "certificate_hash": "7cae1e96583e4c21c18732d65a4cd325418e4a3b"
+          }
+        },
+        {
+          "client_id": "244147939489-dedonase1fpgnelhajq241k0r2dg9hmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqSwMu-TRuTU_1dTgsyK1I9ljxr13JPYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244147939489-dedonase1fpgnelhajq241k0r2dg9hmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

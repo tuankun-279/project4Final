@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/btn_remove_upload"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/red"/>
+
+        <ImageView
+            android:id="@+id/upload_icon"
+            android:layout_width="92dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/upload_filename"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif"
+            android:text="TextView"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/tv_process_check"
+            android:src="@drawable/process_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="2" />
+
+        <ImageView
+            android:id="@+id/imageViewTick"
+            android:layout_width="50dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="2"
+            android:src="@drawable/tick_icon"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

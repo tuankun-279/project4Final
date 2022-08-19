@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/label"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:padding="15dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/bookingId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Booking Id"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/bookingAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_below="@id/bookingId"
+            android:text="Booking Address"
+            android:textColor="#000" />
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_below="@id/bookingAddress"
+            android:text="$ + Price"
+            android:textColor="#000" />
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_below="@id/totalPrice"
+            android:text="Payment"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/petId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/payment"
+            android:layout_marginLeft="9dp"
+            android:text="Pet Id"
+            android:textColor="#000" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
