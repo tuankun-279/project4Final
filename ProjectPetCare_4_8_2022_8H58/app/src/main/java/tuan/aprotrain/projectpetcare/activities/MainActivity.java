@@ -478,6 +478,64 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
+        Query query = mReference.child("Users").orderByChild("userId").equalTo(user.getUid());
+        query.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                query.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                            if (snapshot.child("userUrl").getValue() == null || snapshot.child("userUrl").getValue().equals("")) {
+                                Glide.with(getApplicationContext()).load(R.mipmap.ic_launcher_round).apply(new RequestOptions()
+                                        .override(170, 170)).into(imgProfile);
+                            } else {
+                                Glide.with(getApplicationContext()).load(snapshot.child("userUrl").getValue()).apply(new RequestOptions()
+                                        .override(170, 170)).into(imgProfile);
+                            }
+
+                            String email = snapshot.child("email").getValue().toString();
+                            tvEmailProfileNavDrawer.setText(email);
+                            if (snapshot.child("userName").getValue().equals("")) {
+                                tvUserNameProfileNavDrawer.setText("Update your username");
+                            } else if (snapshot.child("userName").getValue() != null) {
+                                tvUserNameProfileNavDrawer.setText(snapshot.child("userName").getValue().toString());
+                            } else {
+                                tvUserNameProfileNavDrawer.setText("Update your username");
+                            }
+                        }
+                        adapter = new petListNavDerAdapter(pets, images, getApplicationContext());
+                        recyclerView.setAdapter(adapter);
+                        adapter.notifyDataSetChanged();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot snapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
         mReference.child("Users").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

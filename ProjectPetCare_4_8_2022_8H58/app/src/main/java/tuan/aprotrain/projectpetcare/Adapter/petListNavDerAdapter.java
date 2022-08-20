@@ -164,80 +164,68 @@ public class petListNavDerAdapter extends RecyclerView.Adapter<petListNavDerAdap
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                snapshot.getChildren().forEach(image ->{
-                    if(image.getValue(Image.class).getPetId() == selectedPet){
-                        StorageReference sReference = mStorage.getReferenceFromUrl(image.getValue(Image.class).getUrl());
+                snapshot.getChildren().forEach(image -> {
+                    if (image.getValue(Image.class).getPetId() == selectedPet) {
+                        int i = 0;
+//                        refPetDelete.child(String.valueOf(image.getValue(Image.class).getImageId()))
+//                                .child("petId").child(String.valueOf(selectedPet)).removeValue();
 
-                        //begin remove in storage
-                        sReference.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
+                        refPetDelete.addListenerForSingleValueEvent(new ValueEventListener() {
+                            @RequiresApi(api = Build.VERSION_CODES.N)
                             @Override
-                            public void onSuccess(Void aVoid) {
-                                refPetDelete.child(String.valueOf(image.getValue(Pet.class).getPetId())).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
-                                    @Override
-                                    public void onComplete(@NonNull Task<Void> task) {
-                                        if(task.isSuccessful()){
-                                            refPetDelete = FirebaseDatabase.getInstance().getReference("Pets");
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                snapshot.getChildren().forEach(pet -> {
+                                    if (pet.getValue(Image.class).getPetId() == selectedPet) {
+                                        refPetDelete.child(String.valueOf(pet.getValue(Image.class).getImageId())).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
 
-                                            refPetDelete.addListenerForSingleValueEvent(new ValueEventListener() {
-                                                @RequiresApi(api = Build.VERSION_CODES.N)
-                                                @Override
-                                                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                                    snapshot.getChildren().forEach(pet -> {
-                                                        if (pet.getValue(Image.class).getPetId() == selectedPet) {
-                                                            refPetDelete.child(String.valueOf(pet.getValue(Pet.class).getPetId())).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                            public void onComplete(@NonNull Task<Void> task) {
+                                                refPetDelete = FirebaseDatabase.getInstance().getReference("Pets");
 
-                                                                public void onComplete(@NonNull Task<Void> task) {
+                                                refPetDelete.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                    @RequiresApi(api = Build.VERSION_CODES.N)
+                                                    @Override
+                                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                        snapshot.getChildren().forEach(pet -> {
+                                                            if (pet.getValue(Image.class).getPetId() == selectedPet) {
+                                                                refPetDelete.child(String.valueOf(pet.getValue(Pet.class).getPetId())).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
 
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
+                                                                    public void onComplete(@NonNull Task<Void> task) {
+                                                                        StorageReference sReference = mStorage.getReferenceFromUrl(image.getValue(Image.class).getUrl());
 
-                                                @Override
-                                                public void onCancelled(@NonNull DatabaseError error) {
+                                                                        //begin remove in storage
+                                                                        sReference.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                            @Override
+                                                                            public void onSuccess(Void unused) {
 
-                                                }
-                                            });
+                                                                            }
+                                                                        });
+                                                                    }
+                                                                });
+                                                            }
+                                                        });
+                                                    }
 
-                                        }else{
-                                            refPetDelete = FirebaseDatabase.getInstance().getReference("Pets");
+                                                    @Override
+                                                    public void onCancelled(@NonNull DatabaseError error) {
 
-                                            refPetDelete.addListenerForSingleValueEvent(new ValueEventListener() {
-                                                @RequiresApi(api = Build.VERSION_CODES.N)
-                                                @Override
-                                                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                                    snapshot.getChildren().forEach(pet -> {
-                                                        if (pet.getValue(Image.class).getPetId() == selectedPet) {
-                                                            refPetDelete.child(String.valueOf(pet.getValue(Pet.class).getPetId())).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                    }
+                                                });
 
-                                                                public void onComplete(@NonNull Task<Void> task) {
-
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-
-                                                @Override
-                                                public void onCancelled(@NonNull DatabaseError error) {
-
-                                                }
-                                            });
-                                        }
+                                            }
+                                        });
                                     }
                                 });
-
                             }
-                        }).addOnFailureListener(new OnFailureListener() {
+
                             @Override
-                            public void onFailure(@NonNull Exception exception) {
-                                // Uh-oh, an error occurred!
+                            public void onCancelled(@NonNull DatabaseError error) {
+
                             }
                         });
+
                         //end remove in storage
 
-                    }else{
+                    } else {
                         refPetDelete = FirebaseDatabase.getInstance().getReference("Pets");
 
                         refPetDelete.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -270,8 +258,6 @@ public class petListNavDerAdapter extends RecyclerView.Adapter<petListNavDerAdap
 
             }
         });
-
-
 
 
     }

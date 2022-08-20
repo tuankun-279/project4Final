@@ -93,7 +93,7 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder> {
             if (pet.getPetId() == image.getPetId()) {
                 //Glide with
                 Glide.with(parentContext).load(image.getUrl()).apply(new RequestOptions().override(70, 70)).into(holder.imgAvatar);
-                PetUrls.add(new Image(image.getUrl(), position));
+                PetUrls.add(new Image(image.getUrl(), pet.getPetId()));
                 break;
             }
         }
@@ -176,14 +176,13 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder> {
             return;
         }
         for(Image imageItem: PetUrls){
-            if(imageItem.getPetId() == pos_click){
+            if(imageItem.getPetId() == pet.getPetId()){
                 Glide.with(parentContext).load(imageItem.getUrl())
                         .apply(new RequestOptions().override(70, 70)).into(imgAvatarProfilePetSelected);
                 break;
             }else{
                 Glide.with(parentContext).load(R.mipmap.ic_launcher)
                         .apply(new RequestOptions().override(70, 70)).into(imgAvatarProfilePetSelected);
-                break;
             }
         }
 
